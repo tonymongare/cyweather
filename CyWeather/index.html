@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>CyWeather</title>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css'>
+      <link rel='stylesheet' href='https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css'>
+      <link rel="stylesheet" href="./style.css">
+   </head>
+   <body>
+      <meta name="viewport" content="width=device-width" />
+      <div class="container text-center">
+         <div class="banner">
+            <h1 style="text-shadow:2px 2px 5px #eaeaf1;">CyWeather App</h1>
+            <h3 style="text-shadow:2px 2px 5px #eaeaf1;">Click on the Location Icon to Enter Coordinates</h3>
+            <small></small>
+         </div>
+         <div class="main-content text-center">
+            <form id="man-srch-form" class="row collapse">
+               <div class="form-group col-xs-12 col-sm-12">
+                  <h4 class="pull-left">Search Weather Conditions Using Any Co-ordinates</h4>
+               </div>
+               <!--Search Form for Cordinates-->
+               <div class="form-group col-xs-12 col-sm-5">
+                  <input id="input_lat" type="text" class="form-control" placeholder="Enter Latitude" />
+               </div>
+               <div class="form-group col-xs-12 col-sm-5">
+                  <input id="input_long" type="text" class="form-control" placeholder="Enter Longititude"/>
+               </div>
+               <div class="form-group col-xs-12 col-sm-2">
+                  <button id="submit" class="btn btn-default" type="button" onclick="this.blur();">Search</button>
+               </div>
+            </form>
+            <!--End of form-->  
+
+
+            <div class="weather-data-container">
+            
+               <div class="row pull-right weather-data-settings">  
+                  <div class="col-xs-12">
+                     <a class="plain-anchor" href="#"><i class="fa fa-5x fa-map-marker" data-toggle="collapse" data-target="#man-srch-form"></i></a>
+                    </div>
+               </div>
+           
+               <div class="row">
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                     <div class="clockDisplay-container">
+                        <p id="dateDisplay"></p>
+                        <h3 id="clockDisplay"></h3>
+                     </div>
+                  </div>
+                  <!---end of col-xs-12-->
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                     <div class="curLocationDisp-container">
+                        <p id="curLocationDisplay">Please Enter Coordinates</p>
+                        <h3 id="weather-data"></h3>
+                        
+                     </div>
+                  </div>
+                  <!---end of col-xs-12-->
+               </div>
+               <!---end row 1--->
+               <div class="row">
+                  <div class="col-xs-4 col-lg-4">
+                     <div>
+                        <h4 class="disp-label">Temperature</h4>
+                        <p id="tempDisplay">Please Enter Coordinates</p>
+                     </div>
+                  </div>
+                  
+                  <div class="col-xs-4 col-md-4">
+                     <div>
+                        <h4 class="disp-label">Humidity</h4>
+                        <p id="humidDisplay">Please Enter Coordinates</p>
+                     </div>
+                  </div>
+                
+                  <div class="col-xs-4 col-md-4">
+                     <div>
+                        <h4 class="disp-label">WindSpeed</h4>
+                        <p id="windDisplay">Please Enter Coordinates</p>
+                     </div>
+                  </div>
+               
+                  <div class="col-xs-4 col-md-4">
+                     <div>
+                        <h4 class="disp-label">Cloud Cover</h4>
+                        <p id="cloudDisplay">Please Enter Coordinates</p>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+           
+         </div>
+        
+      </div>
+     
+      </div>
+      </div>
+   
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src='https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+   </body>
+</html>
